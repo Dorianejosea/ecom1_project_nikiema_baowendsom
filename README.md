@@ -1,2 +1,2 @@
-# ecom1_project_nikiema_baowendsom
+# project1_nikiema_baowendsom
 projet
