@@ -1,4 +1,5 @@
 <?php
+
 $server = 'localhost';
 $userName = "root";
 $pwd = "";
