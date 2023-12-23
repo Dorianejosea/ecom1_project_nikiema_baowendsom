@@ -11,4 +11,4 @@ var_dump($_POST);
 ?>
 
 
-<h1><center><i>BIENVENUE SUR NOTRE SITE DE LOCATION DE MANGE</i></center></h1>
+<h1><center><i>BIENVENUE SUR NOTRE SITE DE vente de figurines d'anime</i></center></h1>

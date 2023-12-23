@@ -77,13 +77,4 @@ if (isset($_POST)) {
     header('Location: ' . $url);
 }
 
-
-
-
-
-
-
-
-
-
 ?>

@@ -9,10 +9,10 @@
         <form method="post" action="">
 
             <div class="container">
-            <h1><center>BIENVENUE</center></h1>
+            <h1><center>COUCOU :)</center></h1>
 
-                <a href="./page/entree.php">Enregistrez-vous :) </a> </br> </br>
-                <a href="./page/index.php">Connectez-vous :)</a>
+                <a href="./page/entree.php">Inscrivez-vous :) </a> </br> </br>
+                <a href="./page/index.php">Ouvrez une session ici :)</a>
 
                 <?php
                 session_start();
