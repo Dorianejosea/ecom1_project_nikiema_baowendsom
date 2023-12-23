@@ -6,7 +6,7 @@ function createUser(array $data)
     global $conn;
 
 
-     var_dump("Je suis dans mon create user");
+     var_dump("Bienvenue dans le create user");
     $query = "INSERT INTO `user` ( `user_name`, `email`, `pwd`, `fname`, `lname`, `billing_address_id`, `shipping_address_id`, `token`, `role_id`) VALUES (?,?,?,?,?,1,1,?,3)";
  
     if ($stmt = mysqli_prepare($conn, $query)) {

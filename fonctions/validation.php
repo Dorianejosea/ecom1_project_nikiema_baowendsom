@@ -13,19 +13,19 @@ function usernameIsValid(string $username): array
     if (strlen($username) < 2) {
         $result = [
             'isValid' => false,
-            'msg' => 'Le nom utilisé est trop court'
+            'msg' => "Votre nom d'utilisateur doit avoir au moins deux caracteres"
 
         ];
     } elseif (strlen($username) > 20) {
         $result = [
             'isValid' => false,
-            'msg' => 'Le nom utilisé est trop long'
+            'msg' => "Votre nom d'utilisateur est beaucoup trop long. Veuillez entrez un nom avec maximum 20 caracteres"
 
         ];
     } elseif ($userInDB) {
         $result = [
             'isValid' => false,
-            'msg' => 'Le nom est déjà utilisé'
+            'msg' => "Le nom d'utilisateur entre est deja utilise"
         ];
     }
     return $result;
@@ -34,11 +34,11 @@ function usernameIsValid(string $username): array
 function emailIsValid($email)
 {
 
-    $email_validation_regex = "/^[a-z0-9!#$%&'*+\\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+\\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/";
-    if (!preg_match($email_validation_regex, $email)) {
+    $emailValidationRegex = "/^[a-z0-9!#$%&'*+\\/=?^_`{|}~-]+(?:\\.[a-z0-9!#$%&'*+\\/=?^_`{|}~-]+)*@(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?$/";
+    if (!preg_match($emailValidationRegex, $email)) {
         return [
             'isValid' => false,
-            'msg' => "Format d'email invalid",
+            'msg' => "L'Email n'est pas valide",
         ];
     }
     return [
@@ -54,12 +54,12 @@ function nomIsValid($lname){
     if ($length < 2) {
         return [
             'isValid' => false,
-            'msg' => 'Votre nom est trop court'
+            'msg' => "Votre nom doit avoir au moins deux caracteres"
         ];
     } elseif ($length > 20) {
         return [
             'isValid' => false,
-            'msg' => 'Votre nom est trop long. Doit être inférieur a 20 caractères'
+            'msg' => 'Votre nom est beaucoup trop long. Veuillez entrez un nom avec maximum 20 caracteres'
         ];
     }
     return [
@@ -74,12 +74,12 @@ function prenomIsValid($fname){
     if ($length < 2) {
         return [
             'isValid' => false,
-            'msg' => 'Votre prenom est trop court'
+            'msg' => 'Votre prenom doit avoir au moins deux caracteres'
         ];
     } elseif ($length > 20) {
         return [
             'isValid' => false,
-            'msg' => 'Votre prenom est trop long. Doit être inférieur a 20 caractères'
+            'msg' => 'Votre nom est beaucoup trop long. Veuillez entrez un nom avec maximum 20 caracteres'
         ];
     }
     return [
@@ -96,12 +96,12 @@ function pwdLenghtValidation($pwd)
     if ($length < 6) {
         return [
             'isValid' => false,
-            'msg' => 'Votre mot de passe est trop court. Doit être supérieur a 8 caractères'
+            'msg' => 'Votre mot de passe doit avoir au moins six caracteres'
         ];
     } elseif ($length > 16) {
         return [
             'isValid' => false,
-            'msg' => 'Votre mot de passe est trop long. Doit être inférieur a 16 caractères'
+            'msg' => 'Votre mot de passe est beaucoup trop long. Veuillez entrez un mot de passe avec maximum 16 caracteres'
         ];
     }
     return [

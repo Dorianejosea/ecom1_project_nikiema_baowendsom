@@ -1,9 +1,9 @@
 <a href="../">Accueil</a>
 <?php
-require_once "../functions/encode.php";
-require_once "../functions/validation.php";
-require_once "../conn/connexion.php";
-require_once "../functions/userCrud.php";
+require_once "../fonctions/encode.php";
+require_once "../fonctions/validation.php";
+require_once "../utils/connexion.php";
+require_once "../fonctions/userCrud.php";
 session_start();
 var_dump($_POST);
 
@@ -89,14 +89,14 @@ if (isset($_POST)) {
             'lname' => $validprenom['msg']
  
         ];
-        $url = '../affichage/signup.php';
+        $url = '../page/entree.php';
         header('Location: ' . $url);
     }
 } else {
     //redirect to the  signup
-    $url = '../affichage/signup.php';
+    $url = '../page/entree.php';
     header('Location: ' . $url);
 }
  
 ?>
-<a href="../index.php">Return to the page Accueil</a>
+<a href="../results.php">Return to the page Accueil</a>
