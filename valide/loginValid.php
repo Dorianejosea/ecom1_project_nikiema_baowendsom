@@ -73,7 +73,7 @@ if (isset($_POST)) {
     }
 } else {
     //redirige vers login
-    $url = '../results.php';
+    $url = '../index.php';
     header('Location: ' . $url);
 }
 

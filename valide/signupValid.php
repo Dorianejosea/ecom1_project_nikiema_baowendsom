@@ -176,4 +176,4 @@ if (isset($_POST)) {
 <a href="../produit/pageProduits.php">
     <button>Valider mes informations</button>
 </a>
-<a href="../results.php">Rettour a la page d'Accueil</a>
+<a href="../index.php">Rettour a la page d'Accueil</a>

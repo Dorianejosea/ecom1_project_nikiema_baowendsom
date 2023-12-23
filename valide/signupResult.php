@@ -99,4 +99,4 @@ if (isset($_POST)) {
 }
  
 ?>
-<a href="../results.php">Retour a la page d'accueil</a>
+<a href="../index.php">Retour a la page d'accueil</a>

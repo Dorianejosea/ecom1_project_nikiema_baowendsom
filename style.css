@@ -12,7 +12,7 @@ body {
 .container {
   max-width: 800px;
   margin: 50px auto;
-  background-color: #6ed2dd;
+  background-color: palevioletred;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px red;
@@ -39,7 +39,7 @@ select {
 
 button {
   padding: 10px;
-  background-color: #007bff;
+  background-color: palevioletred;
   color: #fff;
   border: none;
   border-radius: 4px;
